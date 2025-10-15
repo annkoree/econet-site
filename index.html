@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoNet — Умная система сортировки</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <h1 class="logo">EcoNet</h1>
+      <ul class="menu">
+        <li><a href="#about">О проекте</a></li>
+        <li><a href="#solution">Решение</a></li>
+        <li><a href="#dashboard">Демо</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content container">
+      <h2>Умная система раздельного сбора мусора</h2>
+      <p>Мы делаем экологию частью университетской жизни</p>
+      <a class="cta" href="#dashboard">Попробовать демо</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section fade-in">
+      <h2>Что такое EcoNet</h2>
+      <p><strong>EcoNet</strong> — экосистема экологичных технологий для устойчивого взаимодействия человека и природы. 
+      Мы внедряем принципы раздельного сбора и мотивации через современную и понятную веб-платформу.</p>
+    </section>
+
+    <section id="problem" class="section fade-in">
+      <h2>Проблема</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Нет удобной сортировки</h3>
+          <p>В корпусах нет современных урн с разделением отходов.</p>
+        </div>
+        <div class="card">
+          <h3>Нет мотивации</h3>
+          <p>Большинство студентов не сортируют мусор — это неудобно и не поощряется.</p>
+        </div>
+        <div class="card">
+          <h3>Экологическая нагрузка</h3>
+          <p>Перерабатывается лишь малая часть отходов, что вредит природе.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" class="section fade-in">
+      <h2>Наше решение</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="https://cdn-icons-png.flaticon.com/512/991/991952.png" alt="bin" />
+          <h3>Умные урны</h3>
+          <p>Датчики и камеры отслеживают наполнение и тип отходов.</p>
+        </div>
+        <div class="feature">
+          <img src="https://cdn-icons-png.flaticon.com/512/2721/2721265.png" alt="web" />
+          <h3>Веб-платформа</h3>
+          <p>Отслеживайте свои баллы, достижения и общий вклад университета в переработку.</p>
+        </div>
+        <div class="feature">
+          <img src="https://cdn-icons-png.flaticon.com/512/2584/2584605.png" alt="reward" />
+          <h3>Мотивация</h3>
+          <p>Набирайте баллы, участвуйте в рейтинге и получайте бонусы.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="section fade-in">
+      <h2>Интерактивное демо</h2>
+      <p>Попробуйте сортировать отходы и посмотрите, как работает система.</p>
+
+      <div class="sim">
+        <div class="bin" data-type="paper">
+          <h3>Бумага</h3>
+          <p>Сортировано: <span id="paperCount">0</span></p>
+          <button onclick="addItem('paper')">Добавить бумагу</button>
+        </div>
+        <div class="bin" data-type="plastic">
+          <h3>Пластик</h3>
+          <p>Сортировано: <span id="plasticCount">0</span></p>
+          <button onclick="addItem('plastic')">Добавить пластик</button>
+        </div>
+        <div class="bin" data-type="general">
+          <h3>Смешанные</h3>
+          <p>Сортировано: <span id="generalCount">0</span></p>
+          <button onclick="addItem('general')">Добавить смешанное</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <h3>Ваш профиль</h3>
+        <input id="nameInput" placeholder="Введите имя" />
+        <p>Баллы: <strong id="points">0</strong></p>
+        <button class="reset" onclick="resetProfile()">Сбросить профиль</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 GreenFuture | EcoNet — проект умной сортировки отходов</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

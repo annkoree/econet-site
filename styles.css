@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;line-height:1.6;background:#f5f8f6;color:#14213d}
+.container{max-width:1100px;margin:0 auto;padding:40px 20px}
+h1,h2,h3{color:#0b3d2e;margin-bottom:12px}
+a{text-decoration:none;color:inherit}
+nav.nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;color:white;font-weight:700}
+.menu{list-style:none;display:flex;gap:24px}
+.menu a{color:white;font-weight:500;transition:opacity .2s}
+.menu a:hover{opacity:.8}
+.hero{background:linear-gradient(135deg,#2b9348,#55a630,#168aad);color:white;min-height:320px;display:flex;flex-direction:column;justify-content:center}
+.hero-content{text-align:center;margin-top:40px}
+.hero-content h2{font-size:36px;font-weight:700;margin-bottom:8px}
+.hero-content p{font-size:18px;margin-bottom:20px;opacity:.9}
+.cta{background:white;color:#2b9348;padding:12px 24px;border-radius:8px;font-weight:600;transition:background .3s}
+.cta:hover{background:#e8f5e9}
+.section{margin-top:60px}
+.grid{display:flex;gap:20px;flex-wrap:wrap}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.06);flex:1;min-width:250px;transition:transform .2s}
+.card:hover{transform:translateY(-5px)}
+.features{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.feature{background:white;padding:20px;border-radius:12px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.05);width:300px;transition:transform .2s}
+.feature img{width:80px;height:80px;margin-bottom:10px}
+.feature:hover{transform:translateY(-8px)}
+.sim{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.bin{background:white;padding:16px;border-radius:10px;width:240px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+.bin button{margin-top:10px;padding:8px 12px;background:#2b9348;color:white;border:none;border-radius:6px;cursor:pointer;transition:background .2s}
+.bin button:hover{background:#248232}
+.profile{text-align:center;margin-top:40px}
+.profile input{padding:8px 10px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px;width:200px}
+.reset{background:#aaa;color:white;border:none;padding:8px 12px;border-radius:6px;cursor:pointer;transition:opacity .2s}
+.reset:hover{opacity:.8}
+.footer{background:#0b3d2e;color:white;text-align:center;padding:20px;margin-top:60px}
+.fade-in{animation:fadeIn 1.2s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
